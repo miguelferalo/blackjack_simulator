@@ -1,0 +1,63 @@
+SESSION_PARAMETERS:
+  HOURS: 10
+  ROUNDS_PER_HOUR: 100
+  N_SESSIONS: 100
+  RULES:
+    SURRENDER: FALSE
+    RESPLITTING: TRUE
+    DOUBLE: TRUE
+  N_DECKS: 6
+  DECK_PEN: 0.8
+  MIN_BET: 50
+  BLACKJACK_PAYOUT: 1.5
+
+BANKROLL: 2000
+
+RESULTS:
+  RESULTS_FOLDER: "results"
+  SIMLULATIONS_FOLDER: "sim_results"
+  SIM_NAME: "sim_{sessions}_{hours}_{n_decks}decks_{strategy}_{min_bet}_{spread}.pkl"
+  STRATEGY: "HIGH_OPT_1"
+
+CARD_DISTRIBUTION:
+  2: 4
+  3: 4
+  4: 4
+  5: 4
+  6: 4
+  7: 4
+  8: 4
+  9: 4
+  10: 16
+  1: 4
+
+STRATEGY:
+
+  STRATEGY_EMPLOYED: "HIGH_OPT_1"
+
+  SPREAD: 1
+
+  BETTING_STRATEGY:
+    0: 1
+    1: 1
+    2: 1
+    3: 1
+    4: 1
+
+  HIGH_OPT_1:
+    2: 0
+    3: 1
+    4: 1
+    5: 1
+    6: 1
+    7: 0
+    8: 0
+    9: 0
+    10: -1
+    1: 0
+
+  DECK_RESOLUTION: 0.5
+
+  
+
+
